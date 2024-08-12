@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Research Journal</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="styles.css"> <!-- Link to the standard CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div id="logo">
+                <a href="Journal.html" class="btn"><h1>Mini Journal</h1></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Journal.html#topics">Explore Topics</a></li>
+                    <li><a href="Journal.html#networks">Networks</a></li>
+                    <li><a href="Journal.html#guides">Guides</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Video Guide: How to Read a scientific paper?</h2>
+            <p>The full guide</p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video-guide">
+        <div class="container">
+            <p>Here's a full guide on how to read and understand scientific papers. </p> 
+            <!-- YouTube Video -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BAS9I4tFgV8?si=cA_CLidVoqiUjZGD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips">
+            <div class="container">
+            <h2>Quick Tips</h2>
+            <ul><li>•	Almost every abstract has the same structure which could make it easier for you to navigate through the paper.</li>
+                <li>•	The first couple of sentences are usually an introduction to the subject of research. 
+                    Following is a methods and results summary of the paper, look for personal language: “in this study” or “we show”, etc. 
+                    The last sentence or two are the final conclusion or the “bottom line” of this study.</li>
+                <li>•	The summary of the study in the introduction is usually presented in the last paragraph 😊</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Explore Topics Section -->
+    <section id="topics">
+        <div class="container">
+            <h3>Explore Topics</h3>
+            <div class="topics-grid">
+                <a href="Topics/therapies.html" class="quick-link">STEM CELL & GENE THERAPIES</a>
+                <a href="Topics/protection.html" class="quick-link">NEUROPROTECTION</a>
+                <a href="Topics/assesment.html" class="quick-link">VISUAL ASSESSMENT</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>Our mission is to make research accessible and engaging for everyone.</p>
+            <a href="#team" class="btn">Meet the Team</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 EGRET AAA. All rights reserved.</p>
+                <ul class="social-links">
+                    <li><a href="https://www.egret-aaa.eu/" class="social-icon" aria-label="Website"><img src="images/website-icon.jpg" alt="Website"></a></li>
+                    <li><a href="https://www.linkedin.com/company/egret-3a" class="social-icon" aria-label="Linkedin"><img src="images/linkedin-icon.png" alt="Linkedin"></a></li>
+                    <li><a href="mailto: info@egret-aaa.eu" class="social-icon" aria-label="Email"><img src="images/email-icon.png" alt="Email"></a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Toggle Between CSS Files -->
+    <script>
+        function toggleAccessibility() {
+            const stylesheet = document.getElementById('theme-stylesheet');
+            if (stylesheet.getAttribute('href') === 'styles.css') {
+                stylesheet.setAttribute('href', 'accessible-styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Standard Version';
+            } else {
+                stylesheet.setAttribute('href', 'styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Accessible Version';
+            }
+        }
+    </script>
+
+</body>
+</html>
