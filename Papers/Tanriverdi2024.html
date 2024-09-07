@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visual Science Made Easy</title>
+        <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+        <link id="theme-stylesheet" rel="stylesheet" href="../styles.css"> <!-- Link to the standard CSS file -->
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>  
+            <div class="container">
+                <div id="site-logo">
+                    <a href="../index.html" class="btn-logo">
+                        <img src="../images/logo1.png" alt="Mini Journal Logo" class="logo-img" style="width: 300px; height: auto;">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../index.html#topics"><span>Explore Topics</span></a></li>
+                        <li><a href="../index.html#networks"><span>Networks</span></a></li>
+                        <li><a href="../learnMore.html"><span>Learn More</span></a></li>
+                        <li><a href="../team.html"><span>About Us</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Rapid assessment of peripheral visual crowding</h2>
+            <p>Tanriverdi et al. 2024</p>
+        </div>
+    </section>
+
+    <!-- Section Navigation -->
+    <div class="section-nav">
+        <a href="Tanriverdi2024.pdf" target="_blank">PDF</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#TheStudy">The Study</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <main class="container">
+
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <div class="intro-container-temp">
+                <div class="text-content-temp" style="text-align: justify;">
+                    <p><br>
+                        <figure style="float: right; width: 40%; margin: 10px 0px 10px 10px; padding: 10px 10px; display: inline-block;">
+                            <img src="../images/VisualCrowdingExample.png" alt="Visual Crowding Example" style="width: 100%; height: auto; border-radius: 10px;">
+                            <figcaption style="font-size: 12px;"><b><i>Figure 1 - Visual Crowding Example.</i></b></figcaption>
+                        </figure>
+                        In our day-to-day lives, we experience rapidly changing environments cluttered with information of all types. 
+                        Just as when you have too many tabs open in Google Chrome, this information can have big implications on performance.
+                        Within vision, this performance reduction can be seen as a worsened ability to perceive objects accurately. 
+                        In cluttered environments, this can impede our ability to recognise specific objects. This phenomenon is known 
+                        as ‘visual crowding’, and it’s most impactful within outer regions of vision, or peripheral vision. For 
+                        instance, <b><em>Figure 1</em></b> gives a nice demonstration of visual crowding at play. When looking 
+                        straight at the target in the centre of the image, it is much easier to notice the child on the right of 
+                        the screen, who is in the open, rather than the child surrounded by road signs. This example shows how 
+                        crowding can play a role in daily tasks such as driving.
+                    <p><br>
+                        <figure style="float: left; width: 40%; margin: 10px 10px 10px 0px;">
+                            <img src="../images/VisualSearchExample.jpg" alt="Psychophysics Task Example" style="width: 100%; height: auto; border-radius: 10px; padding: 10px 10px;">
+                            <figcaption style="font-size: 12px;"><b><i>Figure 2 - Example of psychophysics task (Visual Search).</i></b></figcaption>
+                        </figure>
+                        Whilst visual crowding is not an issue for most individuals, it can become of concern for those experiencing 
+                        certain visual or brain-related deficits. Namely dyslexia, schizophrenia, nystagmus, macular degeneration and
+                        glaucoma (1). In such individuals, crowding effects are more pronounced, and can negatively impact day-to-day life. 
+                        It can lead to issues in reading speeds for dyslexic individuals (2), and issues in face recognition for individuals 
+                        with glaucoma (3).
+                        These challenges highlight the need to increase our understanding of visual crowding, so we can tailor current 
+                        treatments and diagnoses towards these issues. Such would be a welcomed change, as currently there is a heavy 
+                        reliance on time-consuming and attentionally demanding techniques. This reliance on demanding techniques becomes 
+                        an issue when assessing certain patient groups who tend to struggle under conventional psychophysics techniques 
+                        (4). Conventional techniques typically involve presenting a visual stimulus and expecting a response which can 
+                        become over-demanding due to prolonged focus on singular objects, or even too many repetitions/responses needed. 
+                </div>
+            </div>
+        </section>
+
+        <section id="TheStudy">
+            <h2>The Study</h2>
+            <div class="intro-container-temp">
+                <div class="text-content-temp" style="text-align: justify;">
+                    <p><br>
+                        Our study aims to solve the aforementioned issues. We will investigate visual crowding to find a more intuitive 
+                        and efficient method of testing for crowding effects, which is also suited for patient groups. If successful in 
+                        this goal, we can provide a more effective method of assessing early indicators of visual impairment in various 
+                        disorders. In turn, this can allow for necessary treatment to be given at an earlier stage, due to earlier diagnosis. 
+                        One of our main ideas in reaching this goal is to move towards a task employing eye movement analysis. Whilst eye 
+                        tracking gives a range of metrics surrounding visual functioning, we mainly want to implement eye tracking as a 
+                        response mechanism. This would replace the need for a manual ‘button press’ typically seen in traditional approaches. 
+                        Instead, participants would make a ‘saccade’ (rapid eye movement) towards a target, indicating a response. We believe 
+                        this implementation of eye movements will allow for a freer and more natural experience for participants. Another way 
+                        we aim to improve on traditional methods is by reducing the number of repetitions needed. As mentioned, psychophysical 
+                        experiments typically require large amounts of repetition to gain necessary information. However, in our study, we will 
+                        employ an adaptive psychophysics approach where the experiment dynamically changes difficulty based on an individual's 
+                        performance on the task. This is a clever approach which allows for fewer repetitions to collect necessary information, 
+                        thus reducing the overall length of the experiment.   
+                    <p><br>
+                        Ultimately, our primary focus is to develop an innovative, efficient, and adaptive psychophysics task to measure visual 
+                        crowding. To investigate the effectiveness of using eye movement responses, we aim to introduce different ‘visual search’ 
+                        paradigms to either promote continuous eye movement responses or not. A ‘serial search’ paradigm will be implemented to 
+                        promote eye movements, whilst a ‘parallel search’ paradigm will be implemented to minimise eye movements. These paradigms 
+                        are a part of ‘visual search’ which denotes the methods used to analyse a visual environment. ‘Serial search’ is an 
+                        inefficient searching mechanism requiring individual inspection of objects to find the target, usually adopted in situations 
+                        where an object of interest doesn’t stand out from its background. On the other hand, ‘parallel search’ is a more efficient 
+                        mechanism which compares multiple objects at once, and is adopted when an object does stand out from its background. By 
+                        employing a ‘serial search’ paradigm in our study, we can be more sure that continuous eye movements will be present since 
+                        all objects will likely be searched independently. 
+                    </p><br>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+        <!-- Explore Topics Section -->
+        <section id="topics">
+            <div class="container">
+                <h3>Explore Topics</h3>
+                <div class="topics-grid">
+                    <a href="../Topics/therapies.html" class="quick-link">STEM CELL & GENE THERAPIES</a>
+                    <a href="../Topics/protection.html" class="quick-link">NEUROPROTECTION</a>
+                    <a href="../Topics/assesment.html" class="quick-link">VISUAL ASSESSMENT</a>
+                </div>
+            </div>
+        </section>
+    
+    
+        <!-- About Us Section -->
+        <section id="about">
+            <div class="container">
+                <h3>About Us</h3>
+                <p>Our mission is to make research accessible and engaging for everyone.</p>
+                <a href="#team" class="btn"><span>Meet the Team</span></a>
+            </div>
+        </section>
+    
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 EGRET AAA. All rights reserved.</p>
+                <ul class="social-links">
+                    <li><a href="https://www.egret-aaa.eu/" class="social-icon" aria-label="Website"><img src="../images/website-icon.jpg" alt="Website"></a></li>
+                    <li><a href="https://www.linkedin.com/company/egret-3a" class="social-icon" aria-label="Linkedin"><img src="../images/linkedin-icon.png" alt="Linkedin"></a></li>
+                    <li><a href="mailto: info@egret-aaa.eu" class="social-icon" aria-label="Email"><img src="../images/email-icon.png" alt="Email"></a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Toggle Between CSS Files -->
+    <script>
+        function toggleAccessibility() {
+            const stylesheet = document.getElementById('theme-stylesheet');
+            if (stylesheet.getAttribute('href') === 'styles.css') {
+                stylesheet.setAttribute('href', 'accessible-styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Standard Version';
+            } else {
+                stylesheet.setAttribute('href', 'styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Accessible Version';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Science Made Easy</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+    <link id="theme-stylesheet" rel="stylesheet" href="../styles.css"> <!-- Link to the standard CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div id="site-logo">
+                <a href="../index.html" class="btn-logo">
+                    <img src="../images/logo1.png" alt="Mini Journal Logo" class="logo-img" style="width: 300px; height: auto;">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#topics"><span>Explore Topics</span></a></li>
+                    <li><a href="../index.html#networks"><span>Networks</span></a></li>
+                    <li><a href="../learnMore.html"><span>Learn More</span></a></li>
+                    <li><a href="../team.html"><span>About Us</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>NEUROPROTECTION AND OXYGEN DELIVERY</h2>
+            <p>Work focused on developing new methods to offer remaining and new ganglion cells a healthy environment in terms of oxygen delivery and neuroprotection.</p>
+        </div>
+    </section>
+
+
+    <section id="papers">
+        <div class="container">
+            <h3>Research Papers</h3>
+            <div class="papers-container">
+                <div class="paper-card">
+                    <img src="images/paper1-image.jpg" alt="Paper 1 Image" class="paper-image">
+                    <h4 class="paper-title">Title</h4>
+                    <h4>Name and year</h4>Journal
+                    <p class="paper-description">Description</p>
+                    <a href="paper1.html" class="read-more">Read More</a>
+                </div>
+                <div class="paper-card">
+                    <img src="images/paper2-image.jpg" alt="Paper 2 Image" class="paper-image">
+                    <h4 class="paper-title">Paper Title 2</h4>
+                    <p class="paper-description">Description</p>
+                    <a href="paper2.html" class="read-more"><span>Read More</span></a>
+                </div>
+                <div class="paper-card">
+                    <img src="images/paper3-image.jpg" alt="Paper 3 Image" class="paper-image">
+                    <h4 class="paper-title">Paper Title 3</h4>
+                    <p class="paper-description">Description</p>
+                    <a href="paper3.html" class="read-more"><span>Read More</span></a>
+                </div>
+        <!-- Add more paper cards as needed -->
+            </div>
+        </div>
+</section>
+    
+
+
+
+    <!-- Explore Topics Section -->
+    <section id="topics">
+        <div class="container">
+            <h3>Explore Topics</h3>
+            <div class="topics-grid">
+                <a href="../Topics/therapies.html" class="quick-link">STEM CELL & GENE THERAPIES</a>
+                <a href="../Topics/protection.html" class="quick-link">NEUROPROTECTION</a>
+                <a href="../Topics/assesment.html" class="quick-link">VISUAL ASSESSMENT</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>Our mission is to make research accessible and engaging for everyone.</p>
+            <a href="#team" class="btn"><span>Meet the Team</span></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 EGRET AAA. All rights reserved.</p>
+                <ul class="social-links">
+                    <li><a href="https://www.egret-aaa.eu/" class="social-icon" aria-label="Website"><img src="../images/website-icon.jpg" alt="Website"></a></li>
+                    <li><a href="https://www.linkedin.com/company/egret-3a" class="social-icon" aria-label="../Linkedin"><img src="../images/linkedin-icon.png" alt="Linkedin"></a></li>
+                    <li><a href="mailto: info@egret-aaa.eu" class="social-icon" aria-label="Email"><img src="../images/email-icon.png" alt="Email"></a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Toggle Between CSS Files -->
+    <script>
+        function toggleAccessibility() {
+            const stylesheet = document.getElementById('theme-stylesheet');
+            if (stylesheet.getAttribute('href') === 'styles.css') {
+                stylesheet.setAttribute('href', 'accessible-styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Standard Version';
+            } else {
+                stylesheet.setAttribute('href', 'styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Accessible Version';
+            }
+        }
+    </script>
+
+</body>
+</html>

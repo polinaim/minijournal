@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visual Science Made Easy</title>
+        <link rel="icon" type="image/x-icon" href="images/icon.ico">
+        <link id="theme-stylesheet" rel="stylesheet" href="styles.css"> <!-- Link to the standard CSS file -->
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <div class="container">
+                <div id="site-logo">
+                    <a href="index.html" class="btn-logo">
+                        <img src="images/logo1.png" alt="Mini Journal Logo" class="logo-img" style="width: 300px; height: auto;">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html#topics"><span>Explore Topics</span></a></li>
+                        <li><a href="index.html#networks"><span>Networks</span></a></li>
+                        <li><a href="learnMore.html"><span>Learn More</span></a></li>
+                        <li><a href="team.html"><span>About Us</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Section Navigation -->
+    <div class="section-nav">
+        <a href="#Visualizations">Visualizations</a>
+        <a href="#videoGuides">Video Guides</a>
+        <a href="#quickTips">Quick tips</a>
+    </div>
+
+<!-- Visualization Section -->
+<section id="Visualizations">
+    <div class="container">
+        <h2>Visualizations</h2>
+
+        <!-- Slideshow Container -->
+        <div class="carousel-wrapper">
+            <!-- Radio buttons for navigation -->
+            <input type="radio" name="visual-slider" id="visual-slide1" checked>
+            <input type="radio" name="visual-slider" id="visual-slide2">
+
+            <!-- Slides Container -->
+            <div class="slides-container">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <h2>Blind Spot Demonstration</h2><br>
+                    <img src="images/blindspot.png" alt="Blind Spot Visualiser" class="visual-image">
+                    <div class="visual-text">
+                        <p><strong>Instructions</strong><br>
+                            Cover your left eye and look at the cross. Then slowly move your head towards or away from the screen, until you see the elephant disappear. Once it disappears, you have found your blindspot!
+                        </p><br>                    
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <h2>Color Blind Test (Ishihara Test)</h2><br>
+                    <img src="images/colorBlindness.jpg" alt="Color Blindness Test" class="visual-image">
+                    <div class="visual-text">
+                        <p><strong>Instructions</strong><br>
+                            Red-green color blindness can make it difficult to distinguish between red, green, and yellow. If you are able to correctly identify all 6 numbers in the image, you do not have this type of color blindness.
+                        </p><br>                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Arrows -->
+            <div class="carousel-arrows">
+                <label for="visual-slide2" class="left-arrow">&#10094;</label>
+                <label for="visual-slide1" class="right-arrow">&#10095;</label>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Video Carousel Section -->
+<section id="videoGuides">
+    <div class="container">
+        <h2>Video Guides: Science made easy</h2>
+        <p>Learn more about the scientific method and how to read scientific papers.</p><br>
+
+        <!-- Carousel Wrapper -->
+        <div class="carousel-wrapper">
+            <!-- Radio buttons for navigation -->
+            <input type="radio" name="slider" id="video-slide1" checked>
+            <input type="radio" name="slider" id="video-slide2">
+
+            <!-- Slides container -->
+            <div class="slides-container">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <h3>Scientific Methods Explained</h3>
+                    <div class="visual-text">
+                        Science can seem incredibly complex, even for those who work with it daily. Here's a simplified explanation of how science is conducted.
+                    </p><br>                    
+                    </div>
+                    <iframe width="500" height="290" src="https://www.youtube.com/embed/yi0hwFDQTSQ?si=oGV8J_szRSebntW3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <h3>How to Read a Scientific Paper?</h3>
+                    <div class="visual-text">
+                        This guide provides a clear and straightforward approach to help you navigate and interpret scientific literature with confidence.
+                    </p><br>                    
+                    </div>
+                    <iframe width="500" height="290" src="https://www.youtube.com/embed/BAS9I4tFgV8?si=cA_CLidVoqiUjZGD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Left and Right arrows (labels for the radio inputs) -->
+            <div class="carousel-arrows">
+                <label for="video-slide2" class="left-arrow">&#10094;</label>
+                <label for="video-slide1" class="right-arrow">&#10095;</label>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Tips Section -->
+    <section id="quickTips">
+            <div class="container">
+            <h2>Quick Tips</h2>
+            <ul><li>•	Almost every abstract has the same structure which could make it easier for you to navigate through the paper.</li>
+                <li>•	The first couple of sentences are usually an introduction to the subject of research. 
+                    Following is a methods and results summary of the paper, look for personal language: “in this study” or “we show”, etc. 
+                    The last sentence or two are the final conclusion or the “bottom line” of this study.</li>
+                <li>•	The summary of the study in the introduction is usually presented in the last paragraph 😊</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Explore Topics Section -->
+    <section id="topics">
+        <div class="container">
+            <h3>Explore Topics</h3>
+            <div class="topics-grid">
+                <a href="Topics/therapies.html" class="quick-link">STEM CELL & GENE THERAPIES</a>
+                <a href="Topics/protection.html" class="quick-link">NEUROPROTECTION</a>
+                <a href="Topics/assesment.html" class="quick-link">VISUAL ASSESSMENT</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>Our mission is to make research accessible and engaging for everyone.</p>
+            <a href="#team" class="btn"><span>Meet the Team</span></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 EGRET AAA. All rights reserved.</p>
+                <ul class="social-links">
+                    <li><a href="https://www.egret-aaa.eu/" class="social-icon" aria-label="Website"><img src="images/website-icon.jpg" alt="Website"></a></li>
+                    <li><a href="https://www.linkedin.com/company/egret-3a" class="social-icon" aria-label="Linkedin"><img src="images/linkedin-icon.png" alt="Linkedin"></a></li>
+                    <li><a href="mailto: info@egret-aaa.eu" class="social-icon" aria-label="Email"><img src="images/email-icon.png" alt="Email"></a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Toggle Between CSS Files -->
+    <script>
+        function toggleAccessibility() {
+            const stylesheet = document.getElementById('theme-stylesheet');
+            if (stylesheet.getAttribute('href') === 'styles.css') {
+                stylesheet.setAttribute('href', 'accessible-styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Standard Version';
+            } else {
+                stylesheet.setAttribute('href', 'styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Accessible Version';
+            }
+        }
+    </script>
+
+</body>
+</html>

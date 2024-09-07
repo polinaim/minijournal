@@ -1,0 +1,691 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #F3F8FF;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styling */
+header {
+    background: #2e6c7b;
+    color: #fff;
+    padding: 60px 0;
+}
+
+#site-logo {
+    position: absolute; /* Keeps the logo fixed in the top left corner */
+    top: -10px;
+    left: 20px;
+    z-index: 1000; /* Ensures the logo stays on top of other elements */
+    padding: 20px; /* Optional: add some padding to give it space from the edges */
+}
+
+.btn-logo {
+    display: inline-block;
+    background: auto;
+    color: #F3F8FF;
+    padding: 10px 10px;
+    margin-top: 10px;
+    transition: all .3s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.btn-logo:hover {
+    transform: scale(1.1);
+}
+
+#logo img {
+    width: 50px; /* Adjust the width of the logo */
+    height: auto;
+}
+
+#logo h1 {
+    display: inline;
+    margin: 0;
+    font-size: 30px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.nav-links li a {
+    color: #F3F8FF; /* Link color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 8px;
+    transition: all 0.3s;
+    display: inline-block;
+    background: #2e6c7b;
+    margin-top: 7px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 2px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.nav-links li a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover style */
+.nav-links li a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.3s
+}
+
+.nav-links li a:visited {
+    color: #F3F8FF; /* Visited link color to match non-visited */
+}
+
+.nav-links li a:hover {
+    background: #333333;
+    color: #fff;
+}
+
+.nav-links li a:hover span {
+    padding-right: 15px;
+}
+
+.nav-links li a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.nav-links li a:active {
+    background: #333333;
+    color: #fff;
+    transform: translateY(3px);
+}
+
+/* Hero Section */
+#hero {
+    background: #F3F8FF;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background: #2e6c7b;
+    color: #F3F8FF;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Button animations */
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover style */
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: 0.3s
+}
+
+.btn:hover {
+    background: #333333;
+    color: #fff;
+}
+
+.btn:hover span {
+    padding-right: 20px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn:active {
+    background: #333333;
+    color: #fff;
+    transform: translateY(3px);
+}
+
+/* Sections Styling */
+section {
+    padding: 20px 0;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.articles-grid, .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+article, .topic, .quick-link {
+    background: #e3f1ee;
+    color: #333;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background: #333333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Style for quick links (Explore Topics) */
+.quick-link {
+    display: inline-block; /* Allows padding and hover effects */
+    background: #e3f1ee; /* Default background color */
+    color: #333; /* Default text color */
+    padding: 15px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from links */
+    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    text-align: center; /* Center the text */
+}
+
+.quick-link:hover, .quick-link:focus {
+    background: #333; /* Dark background on hover */
+    color: #fff; /* White text on hover */
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+}
+
+/* Optional: Focus styles for better accessibility */
+.quick-link:focus {
+    outline: 2px solid #ffcc00; /* Highlight focus state */
+    outline-offset: 2px;
+}
+
+/* Style for network list */
+.network-list {
+    list-style: none; /* Remove default list bullets */
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: center; /* Center align items horizontally */
+    padding: 20px; /* Remove default padding */
+    margin: 10px; /* Set margin */
+    background-color: white; /* Set background color to white */
+    border-radius: 10px; /* Make corners rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow for better aesthetics */
+}
+
+.network-list li {
+    margin: 0 25px; /* Space between icons; adjust as needed */
+}
+
+/* Style for network icons */
+.network-icon img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Aligns image with text (if needed) */
+    transition: transform 0.3s; /* Optional: Add a transition effect */
+}
+
+.network-icon img:hover {
+    transform: scale(1.1); /* Optional: Slightly enlarge the image on hover */
+}
+
+
+/* Style for social media icons */
+.social-icon img {
+    width: 24px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Aligns image with text (if needed) */
+    transition: transform 0.3s; /* Optional: Add a transition effect */
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Optional: Slightly enlarge the image on hover */
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links .social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s;
+}
+
+.social-links .social-icon:hover img {
+    opacity: 0.7;
+}
+
+/* Contact Section Styling */
+#contact {
+    background: #e3f1ee; /* Light background color for the contact section */
+    padding: 20px 0; /* Reduced padding for a more compact look */
+}
+
+#contact .container {
+    max-width: 600px; /* Reduced width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 15px; /* Reduced padding */
+    background: #fff; /* White background for the form */
+    border-radius: 6px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#contact h3 {
+    margin-bottom: 15px;
+    font-size: 24px; /* Slightly smaller heading */
+    color: #333; /* Darker text color */
+    text-align: center; /* Center the heading */
+}
+
+.papers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.paper-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.paper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.paper-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.paper-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.paper-description {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.read-more {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+    margin-bottom: 4px; /* Less space between label and input */
+    font-weight: bold; /* Make labels bold */
+    color: #333; /* Dark text color for readability */
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%; /* Full width of the container */
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 14px; /* Slightly smaller text */
+}
+
+textarea {
+    resize: vertical; /* Allow resizing only vertically */
+    min-height: 120px; /* Reduced minimum height for textarea */
+}
+
+button[type="submit"] {
+    display: inline-block;
+    background: #333; /* Dark background for button */
+    color: #fff; /* White text */
+    padding: 12px 20px; /* Reduced padding for the button */
+    border: none;
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 16px; /* Slightly smaller text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background: #333333; /* Darker background on hover */
+}
+
+/* Container for the image and text */
+.intro-container {
+    display: flex; /* Use Flexbox layout */
+    align-items: flex-start; /* Align items at the top of the container */
+    gap: 15px; /* Space between the image and the text */
+    margin-bottom: 20px; /* Space below the container */
+}
+
+.intro-container-temp {
+    display: flex; /* Use Flexbox layout */
+    align-items: flex-start; /* Align items at the top of the container */
+    gap: 15px; /* Space between the image and the text */
+    margin-bottom: 20px; /* Space below the container */
+}
+
+/* Style for the image */
+.intro-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    /* Optional: Add a box-shadow for a subtle effect */
+}
+
+.intro-image-temp {
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    margin: .5%;
+    float: inline-end;
+    font-style: italic;
+    font-weight: bold;
+    /* Optional: Add a box-shadow for a subtle effect */
+}
+
+figcaption {
+    max-width: 50%;
+    margin: 1%;
+    bottom: auto;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Style for the text content */
+.text-content {
+    max-width: 600px; /* Optional: Set a max width for the text content */
+}
+
+.text-content-temp {
+    max-width: 100%; /* Optional: Set a max width for the text content */
+}
+
+/* Style for unordered list */
+.text-content ul {
+    list-style-type: disc; /* Display bullet points */
+    margin-left: 20px; /* Space from the left edge of the container */
+}
+
+.text-content-temp ul {
+    list-style-type: disc; /* Display bullet points */
+    margin-left: 20px; /* Space from the left edge of the container */
+}
+
+.text-content li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.text-content-temp li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Style and container for visual demo text and images */
+.visual-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;    /* Center items horizontally */
+    text-align: center;
+}
+
+.visual-image {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.visual-text {
+    margin-top: 20px;
+    max-width: 100%; /* Optional: Set a max width for the text content */
+}
+
+/* Style for section navigation links */
+.section-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #bdbdbd;
+    color: white;
+    border-radius: 5px;
+}
+
+.section-nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background: #ffffff; /* Light background */
+    color: #484848; /* dark text */
+    padding: 2px 10px 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.tag:hover {
+    background: #333333; /* Lighter background on hover */
+    color: #fff;
+}
+
+.purpose-list {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.purpose-list li {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.invitation p {
+    font-style: italic;
+    font-size: 1.3em;
+    color: #2c3e50;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 550px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px; /* Curved corners for the slider container */
+}
+
+/* Container for Slides */
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Width should be 200% for two slides */
+    align-items: center; /* Vertically center slides */
+}
+
+/* Individual Slide Styling */
+.slide {
+    min-width: 100%; /* Each slide takes up full width */
+    box-sizing: border-box;
+    padding: 20px; /* Add padding to the slide content */
+    background-color: #ffffff; /* Background color of slides */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically within each slide */
+    height: 550px; /* Set a fixed height for all slides */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+/* Carousel Arrows */
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-arrows label {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.carousel-arrows label:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Slide Navigation */
+#visual-slide1:checked ~ .slides-container {
+    transform: translateX(0);
+}
+
+#visual-slide2:checked ~ .slides-container {
+    transform: translateX(-100%);
+}
+
+/* Hide the radio buttons (used for slide control) */
+input[type="radio"] {
+    display: none;
+}
+
+/* Video Slides Specific */
+#video-slide1:checked ~ .slides-container {
+    transform: translateX(0);
+}
+
+#video-slide2:checked ~ .slides-container {
+    transform: translateX(-100%);
+}

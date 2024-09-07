@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visual Science Made Easy</title>
+        <link rel="icon" type="image/x-icon" href="images/icon.ico">
+        <link id="theme-stylesheet" rel="stylesheet" href="styles.css"> <!-- Link to the standard CSS file -->
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>  
+            <div class="container">
+                <div id="site-logo">
+                    <a href="index.html" class="btn-logo">
+                        <img src="images/logo1.png" alt="Mini Journal Logo" class="logo-img" style="width: 300px; height: auto;">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html#topics"><span>Explore Topics</span></a></li>
+                        <li><a href="index.html#networks"><span>Networks</span></a></li>
+                        <li><a href="learnMore.html"><span>Learn More</span></a></li>
+                        <li><a href="team.html"><span>About Us</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container" style="text-align: justify;">
+            <h2>About Us</h2><br>
+            <img src="images/group_img.png" alt="Group photo" class="intro-image" style="width: 90%; height: auto; border-radius: 15px; display: block; margin-left: auto; margin-right: auto;">  
+            <br><p>We are 15 Doctoral Candidates participating in the European Glaucoma Research 
+                Training program for Accelerating the Approach to Advanced Glaucoma (EGRET-AAA). 
+                As part of the EGRET-AAA program, we are fortunate to learn from leading European 
+                experts in molecular biology, ophthalmology, and visual neuroscience. Our training 
+                involves a variety of high-level courses and hands-on experiences across different academic and industrial settings.</p>
+        
+            <p><br>While we are focused on advancing research in potential therapies and better assesment of glaucoma,
+                 we also recognize the importance of communicating science effectively. This journal is our 
+                  modest attempt to share what we learn along the way, making the fascinating world 
+                  of visual science a little more approachable for everyone.</p>
+
+            <h2><br>Our Purpose</h2>
+            <p>Our goal is to help bridge the gap between scientific research and the general public. 
+                We believe that understanding visual science shouldn't be limited to experts. 
+                Through this journal, we aim to:</p><br>
+            <ul>
+                <li>• Explain complex concepts in simple terms</li>
+                <li>• Highlight interesting research developments in glaucoma and visual science</li>
+                <li>• Encourage curiosity about the science behind our vision</li>
+            </ul>
+
+            <p><br><center>We invite you to join us on this journey as we explore the complexities of visual science and work towards a future with better treatments for glaucoma. Thank you for being part of our community!</center></p>
+        </div>
+    </section>
+
+
+
+    <section id="networks">
+        <div class="container">
+            <h3>Our Networks</h3>
+            <ul class="network-list">
+                <li><a href="Networks/egretAAA.html" class="network-icon" aria-label="EGRETAAA"><img src="images/EGRET-AAA-Logo.jpg" alt="EGRETAAA"></a></li>
+                <li><a href="Networks/optivist.html" class="network-icon" aria-label="Optivist"><img src="images/OptiVisT-logo.webp" alt="Optivist"></a></li>
+                <li><a href="Networks/egretPlus.html" class="network-icon" aria-label="egretPlus"><img src="images/egret_plus.jpg" alt="egretPlus"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 EGRET AAA. All rights reserved.</p>
+                <ul class="social-links">
+                    <li><a href="https://www.egret-aaa.eu/" class="social-icon" aria-label="Website"><img src="images/website-icon.jpg" alt="Website"></a></li>
+                    <li><a href="https://www.linkedin.com/company/egret-3a" class="social-icon" aria-label="Linkedin"><img src="images/linkedin-icon.png" alt="Linkedin"></a></li>
+                    <li><a href="mailto: info@egret-aaa.eu" class="social-icon" aria-label="Email"><img src="images/email-icon.png" alt="Email"></a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Toggle Between CSS Files -->
+    <script>
+        function toggleAccessibility() {
+            const stylesheet = document.getElementById('theme-stylesheet');
+            if (stylesheet.getAttribute('href') === 'styles.css') {
+                stylesheet.setAttribute('href', 'accessible-styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Standard Version';
+            } else {
+                stylesheet.setAttribute('href', 'styles.css');
+                document.getElementById('toggle-accessibility').innerText = 'Accessible Version';
+            }
+        }
+    </script>
+
+</body>
+</html>
