@@ -8,7 +8,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+<<<<<<< HEAD
     background: #F3F8FF;
+=======
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 }
 
 .container {
@@ -19,6 +22,7 @@ body {
 
 /* Header Styling */
 header {
+<<<<<<< HEAD
     background: #2e6c7b;
     color: #fff;
     padding: 60px 0;
@@ -51,18 +55,31 @@ header {
 #logo img {
     width: 50px; /* Adjust the width of the logo */
     height: auto;
+=======
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 }
 
 #logo h1 {
     display: inline;
     margin: 0;
+<<<<<<< HEAD
     font-size: 30px;
+=======
+    font-size: 24px;
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 }
 
 nav {
     display: inline-block;
     float: right;
+<<<<<<< HEAD
     margin-top: 5px;
+=======
+    margin-top: 10px;
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 }
 
 .nav-links {
@@ -71,6 +88,7 @@ nav {
 
 .nav-links li {
     display: inline-block;
+<<<<<<< HEAD
     margin-left: 15px;
 }
 
@@ -134,6 +152,31 @@ nav {
 /* Hero Section */
 #hero {
     background: #F3F8FF;
+=======
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff; /* Link color */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links li a:visited {
+    color: #fff; /* Visited link color to match non-visited */
+}
+
+.nav-links li a:hover {
+    background: #555;
+    color: #fff;
+}
+
+/* Hero Section */
+#hero {
+    background: #f4f4f4;
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
     color: #333;
     padding: 20px 0;
     text-align: center;
@@ -142,6 +185,7 @@ nav {
 /* Button Styling */
 .btn {
     display: inline-block;
+<<<<<<< HEAD
     background: #2e6c7b;
     color: #F3F8FF;
     padding: 10px 10px;
@@ -192,6 +236,21 @@ nav {
     transform: translateY(3px);
 }
 
+=======
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #555;
+    color: #fff;
+}
+
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 /* Sections Styling */
 section {
     padding: 20px 0;
@@ -209,7 +268,11 @@ h3 {
 }
 
 article, .topic, .quick-link {
+<<<<<<< HEAD
     background: #e3f1ee;
+=======
+    background: #e9ecef;
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
     color: #333;
     text-decoration: none;
     padding: 20px;
@@ -225,7 +288,11 @@ article img {
 
 /* Footer Styling */
 footer {
+<<<<<<< HEAD
     background: #333333;
+=======
+    background: #333;
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -253,10 +320,17 @@ footer p {
 /* Style for quick links (Explore Topics) */
 .quick-link {
     display: inline-block; /* Allows padding and hover effects */
+<<<<<<< HEAD
     background: #e3f1ee; /* Default background color */
     color: #333; /* Default text color */
     padding: 15px; /* Padding around the text */
     border-radius: 10px; /* Rounded corners */
+=======
+    background: #e9ecef; /* Default background color */
+    color: #333; /* Default text color */
+    padding: 15px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
     text-decoration: none; /* Remove underline from links */
     transition: background 0.3s, color 0.3s; /* Smooth transition for hover effects */
     text-align: center; /* Center the text */
@@ -279,6 +353,7 @@ footer p {
     list-style: none; /* Remove default list bullets */
     display: flex; /* Use flexbox to align items in a row */
     justify-content: center; /* Center align items horizontally */
+<<<<<<< HEAD
     padding: 20px; /* Remove default padding */
     margin: 10px; /* Set margin */
     background-color: white; /* Set background color to white */
@@ -288,6 +363,14 @@ footer p {
 
 .network-list li {
     margin: 0 25px; /* Space between icons; adjust as needed */
+=======
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.network-list li {
+    margin: 0 15px; /* Space between icons; adjust as needed */
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 }
 
 /* Style for network icons */
@@ -332,7 +415,11 @@ footer p {
 
 /* Contact Section Styling */
 #contact {
+<<<<<<< HEAD
     background: #e3f1ee; /* Light background color for the contact section */
+=======
+    background: #f4f4f4; /* Light background color for the contact section */
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
     padding: 20px 0; /* Reduced padding for a more compact look */
 }
 
@@ -443,7 +530,11 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
+<<<<<<< HEAD
     background: #333333; /* Darker background on hover */
+=======
+    background: #555; /* Darker background on hover */
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 }
 
 /* Container for the image and text */
@@ -454,6 +545,7 @@ button[type="submit"]:hover {
     margin-bottom: 20px; /* Space below the container */
 }
 
+<<<<<<< HEAD
 .intro-container-temp {
     display: flex; /* Use Flexbox layout */
     align-items: flex-start; /* Align items at the top of the container */
@@ -461,6 +553,8 @@ button[type="submit"]:hover {
     margin-bottom: 20px; /* Space below the container */
 }
 
+=======
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 /* Style for the image */
 .intro-image {
     width: 300px; /* Adjust the width as needed */
@@ -469,6 +563,7 @@ button[type="submit"]:hover {
     /* Optional: Add a box-shadow for a subtle effect */
 }
 
+<<<<<<< HEAD
 .intro-image-temp {
     width: 400px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
@@ -488,30 +583,39 @@ figcaption {
     font-size: 12px;
 }
 
+=======
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 /* Style for the text content */
 .text-content {
     max-width: 600px; /* Optional: Set a max width for the text content */
 }
 
+<<<<<<< HEAD
 .text-content-temp {
     max-width: 100%; /* Optional: Set a max width for the text content */
 }
 
+=======
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 /* Style for unordered list */
 .text-content ul {
     list-style-type: disc; /* Display bullet points */
     margin-left: 20px; /* Space from the left edge of the container */
 }
 
+<<<<<<< HEAD
 .text-content-temp ul {
     list-style-type: disc; /* Display bullet points */
     margin-left: 20px; /* Space from the left edge of the container */
 }
 
+=======
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 .text-content li {
     margin-bottom: 10px; /* Space between list items */
 }
 
+<<<<<<< HEAD
 .text-content-temp li {
     margin-bottom: 10px; /* Space between list items */
 }
@@ -535,6 +639,8 @@ figcaption {
     max-width: 100%; /* Optional: Set a max width for the text content */
 }
 
+=======
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
 /* Style for section navigation links */
 .section-nav {
     display: flex;
@@ -578,7 +684,11 @@ figcaption {
     display: inline-block;
     background: #ffffff; /* Light background */
     color: #484848; /* dark text */
+<<<<<<< HEAD
     padding: 2px 10px 2px;
+=======
+    padding: 5px 10px;
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
@@ -587,6 +697,7 @@ figcaption {
 }
 
 .tag:hover {
+<<<<<<< HEAD
     background: #333333; /* Lighter background on hover */
     color: #fff;
 }
@@ -689,3 +800,8 @@ input[type="radio"] {
 #video-slide2:checked ~ .slides-container {
     transform: translateX(-100%);
 }
+=======
+    background: #555; /* Lighter background on hover */
+    color: #fff;
+}
+>>>>>>> 69766c1425635ac0ebc1ae1fb328df7a83f8a4a0
