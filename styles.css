@@ -67,6 +67,8 @@ nav {
 
 .nav-links {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 .nav-links li {
@@ -572,6 +574,9 @@ figcaption {
 
 .tags {
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .tag {
@@ -583,6 +588,7 @@ figcaption {
     text-decoration: none;
     font-size: 14px;
     margin-right: 10px;
+    margin: 0;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -810,7 +816,8 @@ input[type="radio"] {
     padding: 20px 180px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
 }
 .feature-item {
     background-color: #048896;
