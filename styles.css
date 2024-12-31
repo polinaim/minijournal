@@ -760,3 +760,47 @@ input[type="radio"] {
 #video-slide2:checked ~ .slides-container {
     transform: translateX(-100%);
 }
+
+.paper-info-container {
+    display: flex;
+    align-items: flex-start;
+}
+.paper-image {
+    width: 200px;
+    margin-right: 20px;
+}
+.paper-details {
+    flex: 1;
+}
+.email-link {
+    color: #048896;
+    text-decoration: none;
+    border-bottom: 1px dotted #048896;
+}
+.email-link:hover {
+    color: #036d7a;
+    border-bottom: 1px solid #036d7a;
+}
+
+.pdf-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #048896;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.pdf-link:hover {
+    background-color: #036d7a;
+}
+
+.doi-link {
+    color: #048896; /* Match the title color */
+    text-decoration: none;
+    border-bottom: 1px dotted #048896; /* Dotted underline for style */
+}
+.doi-link:hover {
+    color: #036d7a; /* Darker shade on hover */
+    border-bottom: 1px solid #036d7a; /* Solid underline on hover */
+}
