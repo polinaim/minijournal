@@ -19,17 +19,17 @@ body {
 
 /* Header Styling */
 header {
-    background: #2e6c7b;
+    background: #048896;
     color: #fff;
-    padding: 60px 0;
+    padding: 17px 0;
 }
 
 #site-logo {
     position: absolute; /* Keeps the logo fixed in the top left corner */
-    top: -10px;
+    top: -15px;
     left: 20px;
     z-index: 1000; /* Ensures the logo stays on top of other elements */
-    padding: 20px; /* Optional: add some padding to give it space from the edges */
+    padding: 0px; /* Optional: add some padding to give it space from the edges */
 }
 
 .btn-logo {
@@ -45,7 +45,7 @@ header {
 }
 
 .btn-logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #logo img {
@@ -81,7 +81,7 @@ nav {
     padding: 5px 8px;
     transition: all 0.3s;
     display: inline-block;
-    background: #2e6c7b;
+    background: #048896;
     margin-top: 7px;
     transition: all 0.3s;
     cursor: pointer;
@@ -142,7 +142,7 @@ nav {
 /* Button Styling */
 .btn {
     display: inline-block;
-    background: #2e6c7b;
+    background: #048896;
     color: #F3F8FF;
     padding: 10px 10px;
     text-decoration: none;
@@ -199,7 +199,7 @@ section {
 
 h3 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .articles-grid, .topics-grid {
@@ -209,7 +209,7 @@ h3 {
 }
 
 article, .topic, .quick-link {
-    background: #e3f1ee;
+    background: #e8e8e8 ;
     color: #333;
     text-decoration: none;
     padding: 20px;
@@ -665,6 +665,77 @@ figcaption {
 
 .carousel-arrows label:hover {
     background-color: rgb(255, 255, 255);
+}
+
+.full-width-container {
+    display: flex;
+    width: 98vw;
+    min-height: 90vh;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.section-container {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 -10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.section-container:not(:hover) {
+    opacity: 0.5;
+    transform: scale(0.80);
+}
+.section-container:hover {
+    opacity: 1;
+    transform: scale(1.00);
+    z-index: 1;
+}
+.text-content-temp {
+    text-align: justify;
+    font-size: 12px;
+}
+figure {
+    margin: 10px 0;
+}
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+figcaption {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.title-container {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding: 0px;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    border-radius: 5px;
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.2);*/
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.section-container:hover .title-container {
+    transform: translateX(-50%) translateY(10px);
+    opacity: 1;
+}
+
+.title-container h2 {
+    margin: 0;
+    font-size: 16px;
 }
 
 /* Slide Navigation */
